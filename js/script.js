@@ -15,10 +15,19 @@ createApp({
                 {
                     text: 'Studiare',
                     done: false,
+                },
+                {
+                    text: 'Preparare una crostata',
+                    done: false,
+                },
+                {
+                    text: 'Rincorrere il gatto',
+                    done: false,
                 }
             ],
 
             task_nuova: '',
+            
         };
     },
     methods: {
@@ -34,6 +43,10 @@ createApp({
                 this.list.push(item);
                 this.task_nuova = "";
             }
+        },
+
+        eliminaTask(index){
+            this.list.splice(index,1);
         },
     },
 

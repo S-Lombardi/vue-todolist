@@ -14,8 +14,9 @@ Aggiungete  funzionalità cambio dello stato del task (cambiare il valore di don
 4.5- CREO FUNZIONE AGGIUNGI TASK da collegare al dom grazie al punto 4.3 e/o al punto 4.4
 
 5-Aggiungere funzionalità "Elimina task dalla lista"
-5.1- Creare una funzione con metodo .splice
-5.2- Richiamare la funzione nel tag del pulsante "elimina" con
+5.1- Creare una funzione con metodo .splice. 
+5.2 - Alla funzione dovrò passare nelle parantesi il valore per l'indice delle task
+5.3- Richiamare la funzione nel tag del pulsante "Delete" con
 @click
 
 
