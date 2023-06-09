@@ -19,5 +19,10 @@ Aggiungete  funzionalità cambio dello stato del task (cambiare il valore di don
 5.3- Richiamare la funzione nel tag del pulsante "Delete" con
 @click
 
+6-Aggiungere funzionalità cambio dello stato del task (valore done)
+6.1- creo una classe nel file css che sbarra il testo della task
+6.2- Creo una fuzione che cambia il valore false di done
+6.3- Richiamo la funzione nel tag del pulsante "Done"
+6.4- Aggiungo la classe con v-bind del tag del testo
 
 
