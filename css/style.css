@@ -6,8 +6,9 @@
 
 .content-list{
     width: 100%;
-    min-height: 400px;
+    padding: 50px;
     background-color:rgb(16, 78, 116);
+    border-radius: 10px;
 }
 
 
