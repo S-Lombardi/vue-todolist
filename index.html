@@ -28,12 +28,12 @@
                         </div>
                         <div >
                             <!-- Pulsante Task Done -->
-                            <button  @click="statusTask(index)" type="button" class="btn btn-light me-2">
-                                Done
+                            <button  @click="statusTask(index)" class="btn btn-light me-2" type="button">
+                                <i class="fas fa-check text-success" :class="item.done ? 'fas fa-x text-danger' : ''" ></i>
                             </button>
                             <!-- Pulsante Task Delete -->
                             <button @click="eliminaTask(index)" type="button" class="btn btn-danger me-5">
-                                Delete
+                                <i class="fas fa-trash-can"></i>
                             </button>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
 
             <!-- Pulsante inserisci -->
             <button @click="aggiungiTask"  type="button" class="btn btn-light">
-                Inserisci
+                <i class="fas fa-plus"></i>
             </button>
             <!-- Fine Campo input -->
         </div>
