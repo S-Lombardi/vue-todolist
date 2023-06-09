@@ -15,8 +15,46 @@
 
     <div id="app">
 
+    <div class="container">
+        <div class="content-list mt-5">
+            <!-- Lista dinamica -->
+            <ul class="p-0 list-unstyled">
+                <li v-for="(item,index) in list">
+                    <div class="d-flex justify-content-between border-bottom">
+                        <div class="text-white">
+                            <strong >
+                                {{item.text}}
+                            </strong>
+                        </div>
+                        <div >
+                            <!-- Pulsante Task Done -->
+                            <button type="button" class="btn btn-light me-2">
+                                Done
+                            </button>
+                            <!-- Pulsante Task Delete -->
+                            <button type="button" class="btn btn-danger me-5">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- Fine Lista dinamica -->
 
-        
+            <!-- Campo input inserisci -->
+            <input type="text" placeholder="Aggiungi nella lista...">
+
+            <!-- Pulsante inserisci -->
+            <button type="button" class="btn btn-light">
+                Inserisci
+            </button>
+            <!-- Fine Campo input -->
+        </div>
+
+    </div>
+
+
+
     </div>
 
 

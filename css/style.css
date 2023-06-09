@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.content-list{
+    width: 100%;
+    min-height: 400px;
+    background-color:rgb(16, 78, 116);
+}
