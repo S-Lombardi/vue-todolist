@@ -1,31 +1,40 @@
 const { createApp } = Vue;
 
 createApp({
-    data(){
-        return{
-            list:[
+    data() {
+        return {
+            list: [
                 {
-                    text:'Fare la spesa',
+                    text: 'Fare la spesa',
                     done: false,
                 },
                 {
-                    text:'Andare in bici',
+                    text: 'Andare in bici',
                     done: false,
                 },
                 {
-                    text:'Studiare',
+                    text: 'Studiare',
                     done: false,
-                },
-            ]
-        }
-       
+                }
+            ],
+
+            task_nuova: '',
+        };
     },
+    methods: {
 
-    indice: 0,
+        //metodo per aggiungere task nuove
+        aggiungiTask() {
+            if (this.task_nuova != ''){
+                let item = {
+                    text: this.task_nuova,
+                    done: false,
+                };
 
-    methods:{
-
-        
+                this.list.push(item);
+                this.task_nuova = "";
+            }
+        },
     },
 
 

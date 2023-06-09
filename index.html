@@ -42,10 +42,10 @@
             <!-- Fine Lista dinamica -->
 
             <!-- Campo input inserisci -->
-            <input type="text" placeholder="Aggiungi nella lista...">
+            <input v-model="task_nuova"  @keyup.enter="aggiungiTask" type="text" placeholder="Aggiungi nella lista...">
 
             <!-- Pulsante inserisci -->
-            <button type="button" class="btn btn-light">
+            <button @click="aggiungiTask"  type="button" class="btn btn-light">
                 Inserisci
             </button>
             <!-- Fine Campo input -->
