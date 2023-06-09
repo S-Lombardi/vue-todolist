@@ -45,9 +45,19 @@ createApp({
             }
         },
 
+        //funzione per eliminare una task
         eliminaTask(index){
             this.list.splice(index,1);
         },
+
+        statusTask(index){
+            if(this.list[index].done){
+                this.list[index].done = false;
+            }
+            else{
+                this.list[index].done = true;
+            }
+        }
     },
 
 

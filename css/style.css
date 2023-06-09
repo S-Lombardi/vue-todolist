@@ -9,3 +9,8 @@
     min-height: 400px;
     background-color:rgb(16, 78, 116);
 }
+
+
+.style-done{
+    text-decoration: line-through 2px black;
+}
